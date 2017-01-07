@@ -16,7 +16,7 @@
 
 FROM ossfuzz/base-builder
 MAINTAINER alex.gaynor@gmail.com
-RUN apt-get install -y cmake libssl-dev
+RUN apt-get install -y make autoconf automake libtool cmake libssl-dev
 RUN git clone --depth 1 https://github.com/libssh2/libssh2
 WORKDIR libssh2
 COPY build.sh libssh2_fuzzer.cc $SRC/
