@@ -14,7 +14,7 @@
 #
 ################################################################################
 
-FROM ossfuzz/base-builder
+FROM gcr.io/oss-fuzz-base/base-builder
 MAINTAINER alex.gaynor@gmail.com
 RUN apt-get install -y cmake libssl-dev
 RUN git clone --depth 1 https://github.com/libssh2/libssh2
